@@ -1,0 +1,3 @@
+const http=require('node:http'),fs=require('node:fs'),path=require('node:path');
+const files={'/':'index.html','/index.html':'index.html','/style.css':'style.css','/app.js':'app.js'};
+http.createServer((req,res)=>{const file=files[req.url.split('?')[0]];if(!file){res.writeHead(404);return res.end('Not found')}fs.readFile(path.join(__dirname,file),(err,data)=>{if(err){res.writeHead(500);return res.end('Read error')}res.setHeader('Content-Type',({'html':'text/html; charset=utf-8','css':'text/css','js':'text/javascript'})[path.extname(file).slice(1)]);res.setHeader('Cache-Control','no-cache');res.end(data)})}).listen(3000,'0.0.0.0',()=>console.log('YUN dashboard: port 3000'));

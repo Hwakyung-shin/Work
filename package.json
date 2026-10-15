@@ -1,0 +1,12 @@
+{
+  "name": "yun-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "test": "node tests/browser.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.61.1"
+  }
+}
