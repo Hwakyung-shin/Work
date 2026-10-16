@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "test": "node tests/browser.cjs"
+    "test": "node tests/browser.cjs",
+    "test:cloud": "node tests/cloud.cjs"
   },
   "devDependencies": {
     "playwright": "1.61.1"
