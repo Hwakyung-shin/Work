@@ -1,3 +1,2 @@
-// Public Supabase project URL and publishable (or legacy anon) key only.
-// Never use service_role, secret keys, database passwords, or personal credentials.
-window.WORKSPACE_CLOUD_CONFIG = {url:'',key:''};
+// Public project configuration. Never put server secrets here.
+window.WORKSPACE_CLOUD_CONFIG = {url:'https://gvtsnahrnrzyjcdbrkcz.supabase.co',key:'sb_publishable_96QOmzlnW1tVsXOeyQAUmg_ihxZ_ZQf'};
